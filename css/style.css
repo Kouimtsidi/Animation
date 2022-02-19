@@ -1,0 +1,75 @@
+.covid{
+	   width: 1700px;
+       height: 1000px;
+}
+.relative{
+	   margin: 0 auto;
+       width: 1700px;
+       position: relative;
+}
+.absolute{
+	   position: absolute;
+	   top: 190px;
+	   left: 140px;
+	   animation: virus1-animation 5s forwards;
+}
+.image{
+	   width: 80px;
+	   height: 80px;
+}
+.absolute1{
+          position: absolute;
+          top: 210px;
+          right: 450px;
+          animation: virus-animation 4s forwards;
+}
+.absolute2{
+	       position: absolute;
+           bottom: 100px;
+           left: 600px;
+           animation: box-animation 6s forwards;
+}
+.image2{
+	    width: 220px;
+        height: 450px;
+}
+.absolute3{
+	       position: absolute;
+	       bottom: 3px;
+           left: 1105px; 
+}
+.girl{ 
+	  width: 280px;
+      height: 420px;
+}
+
+.absolute4{
+	       position: absolute;
+	       bottom: 270px;
+	       left: 1255px;
+	       animation: mask 15s forwards;
+}
+.mask{width: 90px;
+   height: 80px;}
+
+@keyframes box-animation{from{left: 600px;}
+                         to{left: 800px;}}
+@keyframes virus1-animation{0%{top: 190px;
+                               left: 140px;}
+                            50%{top: 330px;
+                            	left: 120px;
+                                opacity: 1;}
+                             100%{top: 470px;
+                                left: 300px;
+                                opacity: 0;}}
+
+@keyframes virus-animation{0%{top: 190px;
+                              right: 450px;}
+                            50%{top: 380px;
+                              right: 450px;
+                              opacity: 1;}
+                            100%{top: 620px;
+                               right: 400px;
+                               opacity: 0}}
+ @keyframes mask{from{opacity: 0}
+                 to{opacity: 1}}
